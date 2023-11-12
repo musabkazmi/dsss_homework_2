@@ -1,18 +1,13 @@
 import unittest
 from math_quiz import max_min, Select_oeration, Calculation
-
-
 class TestMathGame(unittest.TestCase):
-
     def test_function_max_min(self):
         # Test if random numbers generated are within the specified range
         min_val = 1
         max_val = 10
-
         for _ in range(1000):  # Test a large number of random values
             rand_num = max_min(min_val, max_val)
             self.assertTrue(min_val <= rand_num <= max_val)
-
     def test_function_oeration(self):
         # TODO
         add,subtract,multiply = '+','-','*'
@@ -20,7 +15,6 @@ class TestMathGame(unittest.TestCase):
             operation = Select_oeration()
             self.assertTrue( operation == '+' or operation == '-' or operation == '*' )
         pass
-
     def test_function_Calculation(self):
         test_cases = [
             (5, 2, '+', '5 + 2', 7),
