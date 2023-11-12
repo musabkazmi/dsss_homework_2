@@ -1,6 +1,4 @@
 import random
-
-
 def max_min(min, max):
     """
     This function will return a Random integer between min and max.
